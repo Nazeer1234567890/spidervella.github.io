@@ -1,0 +1,26 @@
+{% load static %}
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+    <head>
+        {% include 'site/admin/head.html' %}
+    </head>
+
+    <body>
+
+    <div id="app" class="app">
+
+        {% include 'site/admin/header.html' %}
+
+        {% include 'site/admin/side_bar.html' %}
+
+        {% block content %} {% endblock %}
+
+
+        {% include 'site/admin/admin_scripts.html' %}
+
+
+
+    </div>
+    </body>
+
+</html>

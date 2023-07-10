@@ -1,0 +1,27 @@
+{% load static %}
+<!doctype html>
+<html lang="zxx">
+    <head>
+        {% include 'site/head.html' %}
+    </head>
+
+    <body>
+
+      
+
+        <header class="header-area fixed-top">
+            {% include 'site/header_top.html' %}
+            {% include 'site/nav_bar.html' %}
+
+        </header>
+
+        {% block content %} {% endblock %}
+
+        
+        {% include 'site/footer_top.html' %}
+        {% include 'site/footer_bottom.html' %}
+
+        {% include 'site/global_scripts.html' %}
+    </body>
+
+</html>

@@ -1,0 +1,25 @@
+{% load static %}
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+    <head>
+        {% include 'site/admin/head.html' %}
+    </head>
+
+   
+    <body class='pace-top'>
+
+    <div id="app" class="app app-full-height app-without-header">
+
+     
+
+        {% block content %} {% endblock %}
+
+
+        {% include 'site/admin/admin_scripts.html' %}
+
+
+
+    </div>
+    </body>
+
+</html>
